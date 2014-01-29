@@ -63,6 +63,7 @@ h5{
     position: relative;
     z-index: 100;
     width: 100%;
+    min-height: 40px;
     background-image: url('../images/nav-bg-tile.png');
     background-repeat: repeat-x;
     
@@ -73,15 +74,17 @@ h5{
 }
 
 #home_nav > ul > li {
-    display: inline-block;   
+    display: inline-block;
 }
 
 #home_nav > ul > li > a {
-    border-right: 1px solid white;
+    position: relative;
+    top: 1px;
+    border-right: 1px solid #F2F2F2;
     font: 14.5px Arial;
     font-weight: 600;
-    letter-spacing: -0.02em;
-    padding: 0.7em 2em 0.5em 2em;
+    letter-spacing: -0.01em;
+    padding: 12px 20px 10px 20px;
     color: black;
     display: inline-block;
     text-transform: uppercase;
@@ -92,7 +95,7 @@ h5{
 }
 
 #backdrop{
-    min-height: 1000px;
+    min-height: 1500px;
     background-image: url('../images/background.png');
     background-repeat: repeat;
 }
@@ -112,7 +115,7 @@ h5{
     float: left;
     text-align: left;
     width: 95%;
-    max-width: 600px;
+    max-width: 300px;
     margin: 0px 0px 25px 20px;
     padding: 5px;
     background: #e2e2e2;
@@ -133,7 +136,7 @@ h5{
     float: left;
     text-align: left;
     width: 95%;
-    max-width: 295px;
+    max-width: 300px;
     margin: 0px 20px 25px 5px;    
     padding: 5px;
     background: #e2e2e2;
@@ -174,7 +177,6 @@ h5{
         margin-right: 5px;
     }
     #right_column{
-        max-width: 400px;
         margin-left: 5px;
         margin-right: 5px;
     }

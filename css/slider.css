@@ -14,11 +14,6 @@
 }
  
 .flexslider a img { outline: none; border: none; }
- 
-.flexslider {
-    margin: 0;
-    padding: 0;
-}
 
 .flexslider .slides > li {
     display: none;
@@ -46,11 +41,19 @@
 html[xmlns] .slides { display: block; }
 * html .slides { height: 1%; }
 
+.flex-container {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    min-width: 150px;
+    max-width: 960px;
+}
+
 .flexslider {
     position: relative;
-    zoom: 1;
-    padding: 25px 20px 30px 20px;
     background: #ffffff;
+    margin: 0px;
+    padding: 25px 20px;
 }
 
 .flexslider .slides { zoom: 1; }
@@ -91,14 +94,6 @@ html[xmlns] .slides { display: block; }
     top: 35px;
 }
 
-.flex-direction-nav .flex-next {
-    right: -5px;
-    
-    -webkit-border-radius: 3px 0 0 3px;
-    -moz-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
-}
- 
 .flex-direction-nav .flex-prev {
     left: -5px;
  
@@ -106,17 +101,13 @@ html[xmlns] .slides { display: block; }
     -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
 }
- 
-.flex-direction-nav .flex-next:before { 
-    display: block;
-    position: absolute;
-    content: '';
-    width: 9px;
-    height: 13px;
-    top: 11px;
-    left: 15px;
-    background: url(../images/whiteArrow.png) no-repeat;
-    z-index: 20;
+
+.flex-direction-nav .flex-next {
+    right: -5px;
+    
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
 }
 
 .flex-direction-nav .flex-prev:before { 
@@ -128,6 +119,18 @@ html[xmlns] .slides { display: block; }
     top: 11px;
     left: 11px;
     background: url(../images/whiteArrow2.png) no-repeat;
+    z-index: 20;
+}
+
+.flex-direction-nav .flex-next:before { 
+    display: block;
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 13px;
+    top: 11px;
+    left: 15px;
+    background: url(../images/whiteArrow.png) no-repeat;
     z-index: 20;
 }
  
@@ -143,12 +146,11 @@ html[xmlns] .slides { display: block; }
     border-right: 5px solid #002952;
 }
 
-.flexslider .flex-control-nav {
+.flex-control-nav {
     position: absolute;
     width: 100%;
-    bottom: 8px;
+    bottom: 5px;
     text-align: center;
-    margin: 0 0 0 -20px;
 }
  
 .flex-control-nav li {
@@ -187,7 +189,7 @@ html[xmlns] .slides { display: block; }
     box-shadow: none;
 }
 
-.flexslider .slides p {
+.slides p {
     display: block;
     position: absolute;
     left: 0;
@@ -208,4 +210,20 @@ html[xmlns] .slides { display: block; }
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+}
+
+@media screen and (max-width: 400px) {
+    .flex-container{
+        margin: 0px 5px;
+    }
+    .flex-direction-nav .flex-next:after {
+        border: none;
+    }
+    .flex-direction-nav .flex-prev:after {
+        border: none;
+    }
+    .flexslider{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
