@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="the North Orange County Community College">
+    <meta name="keywords" content="North, Orange, County, Community, College">
+    <meta name="author" content="the North Orange County Community College">
+    <title>Welcome to the North Orange County Community College</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
+    <script src="js/detectmobilebrowser.js"></script>
+</head>
+
+<body>    
+    <header id="top_header">
+        <div id="header_wrapper">
+            <img src="images/header-bg-image.png" class="img-responsive" alt="North Orange County Community College District">
+        </div>
+    </header>
+    
+    <nav id="home_nav">
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Fullerton College</a></li>
+            <li><a href="#">Cypress College</a></li>
+            <li><a href="#">School of Continuing Education</a></li>
+        </ul>
+    </nav>
+    
+    <div id="backdrop">    
+        <div id="white_container">    
+            
+            <div class="flex-container">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <a href="#"><img src="images/student-center.jpg" alt="Fullerton College Student Center"></a>
+                            <p>Fullerton College Student Center</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/city-night-buildings-lights.jpg" alt="Fullerton College Student Center"></a>
+                            <p>The Big Apple</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/The-White-House-Wallpaper.jpg" alt="Fullerton College Student Center"></a>
+                            <p>Don't push that red button</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                                    
+            <section id="left_column">
+                <article>
+                    <h2>News and Announcements</h2>
+                
+                    <h5>Dr. Blahblah is Citizen of the Year. This is some more text to show spacing and other things like padding and strawberries.</h5>
+                    <p>Lorem Ipsum is so boring. That's why I just randomly type things like this instead. Want to hear a joke about pizza? Nevermind, it's too cheesy ;P</p>
+         
+                    <h5>Chancellor Memo</h5>
+                    <p>So, so you think you can tell Heaven from Hell, Blue skies from pain. Can you tell a green field From a cold steel rail? A smile from a veil? Do you think you can tell?</p>
+
+                    <h5>The budget crises is here</h5>
+                    <p>Money, it's a crime Share it fairly But don't take a slice of my pie. Money, so they say Is the root of all evil Today</p>
+                    
+                    <h2>My Gateway</h2>
+                </article>
+            </section>
+    
+            <aside id="right_column">
+                <header>
+                    <h3>Gateways for...</h3>
+                </header>
+                <ul>
+                    <li>Students & Parents</li>
+                    <li>Faculty & Staff</li>
+                    <li>Media</li>
+                    <li>Community & Businesses</li>
+                    <li>Government Relations</li>
+                </ul>    
+                
+                <header>
+                    <h3>Top destinations</h3>
+                </header>
+                <ul>
+                    <li>Chancellor's Page</li>
+                    <li>Board of Trustees</li>
+                    <li>Departments</li>
+                    <li>Job Opportunities</li>
+                    <li>Policies & Procedures</li>
+                    <li>Facilities Bond Information</li>
+                    <li>Staff Development</li>
+                </ul>
+                
+                <footer>
+                    <h3>Quick links</h3>
+                </footer>
+            </aside>
+            
+            <footer id="footer_bottom">
+                District Offices * 1830 W. Romneya Drive, Anaheim CA 92801-1819 * (714) 808 - 4500
+                <div id="icons">
+                    <a href="#"><img src="images/fb-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/yt-icon.png" alt="YouTube"></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.flexslider').flexslider({
+		animation: 'fade',
+		controlsContainer: '.flex-container'
+            });
+        });
+    </script>
+        
+</body>
+</html>
